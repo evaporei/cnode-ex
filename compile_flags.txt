@@ -1,0 +1,8 @@
+-I
+/opt/homebrew/opt/erlang/lib/erlang/usr/include
+
+-L
+/opt/homebrew/opt/erlang/lib/erlang/usr/lib
+
+-l
+ei
