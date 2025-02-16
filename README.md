@@ -4,18 +4,18 @@ Example usage of [C Nodes](https://www.erlang.org/doc/system/cnode.html) to comm
 
 You'll need two terminals:
 
-## Elixir
+## Elixir (receive)
 
 ```bash
 $ iex --sname mynode --cookie secret
-iex(mynode@iseatz)1> c "my_process.exs"
+iex(mynode@iseatz)1> c "receive.exs"
 []
 ```
 
-## C
+## C (send)
 
 ```bash
-$ cc -I/opt/homebrew/opt/erlang/lib/erlang/usr/include -L/opt/homebrew/opt/erlang/lib/erlang/usr/lib -lei main.c
+$ cc -I/opt/homebrew/opt/erlang/lib/erlang/usr/include -L/opt/homebrew/opt/erlang/lib/erlang/usr/lib -lei send.c
 ./a.out
 Message sent to BEAM!
 ```
